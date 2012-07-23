@@ -1,0 +1,21 @@
+<h2>New Booking Request</h2>
+
+<p>Congratulations - The following person has requested rate information for the following date.</p>
+
+<label>Name:</label> <%= @booking_request[:name] %><br/>
+<label>Phone:</label> <%= @booking_request[:phone] %><br/>
+<label>Email:</label> <%= @booking_request[:email] %><br/>
+<label>Address:</label> <%= @booking_request[:address] %><br/><br/>
+
+<hr/>
+
+<label>Adults:</label> <%= @booking_request[:adults] %><br/>
+<label>Kids:</label> <%= @booking_request[:kids] %><br/><br/>
+<label>Arrival:</label> <%= @booking_request["arrival(2i)"] %>/<%= @booking_request["arrival(3i)"] %>/<%= @booking_request["arrival(1i)"] %><br/>
+<label>Nights:</label> <%= @booking_request[:nights] %><br/><br/>
+
+<hr/>
+
+<br/>
+
+<p>This notice was sent from the Glacier Ridge Website.</p>

@@ -1,0 +1,6 @@
+.button,
+.button2 {behavior: url(js/PIE.htc);position:relative;padding-top:5px;padding-bottom:2px;}
+.bgstretcher img { -ms-interpolation-mode: bicubic; }
+
+*+html .button2 {padding: 7px 19px 0;}
+*+html .button {padding: 7px 19px 0;}

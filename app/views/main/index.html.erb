@@ -1,0 +1,41 @@
+<body id="page1">
+	<div id="bgSlider"></div>
+    
+    <!--==============================content================================-->
+    <section id="content">
+        <div class="relative">
+            <div class="bg_spinner"></div>
+            <a href="#" id="next"></a>
+            <a href="#" id="prev"></a>
+        </div>
+        <div class="main">
+            <div class="wrapper">
+                <div class="col-1">
+                	<div class="index-2">
+                        <h1><a href="/">logo</a></h1>
+                        <%= render :partial => 'nav' %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg">
+    
+        <!--==============================aside=================================-->
+       <%= render :partial => 'footer' %>
+    
+      
+    </div>
+	<script type="text/javascript"> Cufon.now(); </script>
+	<script type="text/javascript">
+		$('#bgSlider').bgSlider({
+			duration:1000,
+			images:['/images/bg-1.jpg','/images/bg-2.jpg','/images/bg-3.jpg','/images/bg-4.jpg'],
+			preload:true,
+			spinner:'.bg_spinner',
+			nextBu:'#next',
+			prevBu:'#prev',
+			slideshow:7000
+		 })
+    </script>
+</body>
