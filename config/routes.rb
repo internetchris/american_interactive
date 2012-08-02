@@ -58,7 +58,8 @@ Glacierridge::Application.routes.draw do
    root :to => "main#index"
    match 'selling' => 'main#selling'
     match 'buying' => 'main#buying'
-     match 'search_mls' => 'main#search_mls'
+     match 'search' => 'main#search'
+     match 'myhomes' => 'main#myhomes'
      match 'about' => 'main#about'
   # See how all your routes lay out with "rake routes"
 
